@@ -1,0 +1,145 @@
+/* ----------------------------
+   ベーススタイル
+----------------------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8fc;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #4ca3dd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.toc {
+    background: #ffffff;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.toc h2 {
+    margin-top: 0;
+    border-left: 6px solid #121a1f;
+    padding-left: 10px;
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.toc ul li {
+    margin: 8px 0;
+}
+
+.toc a {
+    text-decoration: none;
+    color: #151515;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    border-left: 6px solid #4ca3dd;
+    padding-left: 10px;
+}
+
+.card {
+    background: white;
+    padding: 15px 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    color: #555;
+    font-size: 14px;
+}
+
+a {
+    color: #2979ff;
+}
+
+/* 画像が大きすぎるときに自動調整 */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* スマホ用 */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* 全デバイス共通 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 画像は画面幅に合わせて縮む */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* スマホ対応：幅600px以下 */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}
+
